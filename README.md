@@ -1,4 +1,4 @@
-# Simple Kubernetes web application deployment
+# ClusterVitals -> simple Kubernetes web application deployment
 
 ## Overview
 
@@ -55,6 +55,12 @@ User → NodePort Service → Pods(ReplicaSet managed) → Container
 kubectl scale deployment k8s-webapp-deployment --replicas=<n>
 ```
 - Here, n is the number of replica pods you require
+
+### 5. Webpage
+- Displays application version and runtime environment
+- Detects Kubernetes runtime environment via environment variables
+- Shows pod hostname to demonstrate load balancing
+
 ---
 
 ## How to Run
