@@ -14,9 +14,11 @@ spec:
     spec:
       containers:
       - name: k8s-webapp
-        image: dopester03/k8s_webapp:v1
+        image: dopester03/k8s_webapp:v3
         ports:
         - containerPort: 5000
         env:
         - name: ENV
           value: "production"
+        - name: VERSION
+          value: "v3"
