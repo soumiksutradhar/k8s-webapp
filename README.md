@@ -154,8 +154,7 @@ Kubernetes automatically recreates a new pod to maintain the desired replica cou
 Update the container image version:-
 
 ```bash
-kubectl set image deployment/k8s-webapp-deployment \
-k8s-webapp=dopester03/k8s_webapp:v3
+kubectl set image deployment/k8s-webapp-deployment k8s-webapp=dopester03/k8s_webapp:v3
 ```
 
 Monitor rollout status:-
